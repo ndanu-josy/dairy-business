@@ -43,11 +43,11 @@ function income (sp, time) {
     var yearlyIncome = totalProduction * buyingPrice * 365;
     var annualOutput = document.getElementById("annualOutput");
 
-    annualOutput.innerHTML = "Your weekly income will be Kshs " +weeklyOutput +"<br>"
+    annualOutput.innerHTML = "Your weekly income will be Kshs " +weeklyIncome +"<br>"
                             + "Your yearly income will be Kshs " +yearlyIncome;
 }
 
-function leapYear (month, days){
+function leapYearIncome (month, days){
     var january = {
         month : "January",
         days : 31,
@@ -97,5 +97,16 @@ function leapYear (month, days){
        month : "Decembeer",
        days : 31
     }
-    
+    var leapYear = [january, february, march, april, may, june, july, august, september, october, november, december];
+    var leapMonth = document.getElementById("leapMonth");
+
+for (var i=0; i<12; i++) {
+
+    //var totalProduction = 500;
+    var monthlyIncome = leapYear[i].days * totalProduction * 45;
+
+     leapMonth.innerHTML = "Your income for " + leapYear[i].month + " is Kshs " + monthlyIncome;
+   
+}
+
 }
