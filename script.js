@@ -1,5 +1,5 @@
 
-
+    var totalProduction;
 function shedProduction(){
     
 
@@ -8,7 +8,7 @@ function shedProduction(){
     var shedC = document.getElementById("amt3").value;
     var shedD = document.getElementById("amt4").value;
 
-    var totalProduction = parseInt(shedA) + parseInt(shedB) +parseInt(shedC) + parseInt(shedD);
+     totalProduction = parseInt(shedA) + parseInt(shedB) +parseInt(shedC) + parseInt(shedD);
     var dailyPro = document.getElementById("dailyPro");
 
         
@@ -31,4 +31,21 @@ function shedProduction(){
     }
     
    
+}
+/* var income = function (sp, time){
+    var buyingPrice = 45;
+    var weeklyIncome = totalProduction * buyingPrice * 7;
+    console.log("Your weekly income will be Kshs"+ weeklyIncome);
+
+    var yearlyIncome = tot * buyingPrice* 366;
+    console.log("Your annual income will be Kshs"+ yearlyIncome);
+
+}
+ income ();*/
+function income (sp, time) {
+    var buyingPrice = 45;
+    var weeklyIncome = totalProduction * buyingPrice *7;
+    var weeklyOutput = document.getElementById("weeklyOutput")
+
+    weeklyOutput.innerHTML = "Kshs" + weeklyIncome;
 }
