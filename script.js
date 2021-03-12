@@ -32,20 +32,70 @@ function shedProduction(){
     
    
 }
-/* var income = function (sp, time){
-    var buyingPrice = 45;
-    var weeklyIncome = totalProduction * buyingPrice * 7;
-    console.log("Your weekly income will be Kshs"+ weeklyIncome);
 
-    var yearlyIncome = tot * buyingPrice* 366;
-    console.log("Your annual income will be Kshs"+ yearlyIncome);
-
-}
- income ();*/
 function income (sp, time) {
     var buyingPrice = 45;
     var weeklyIncome = totalProduction * buyingPrice *7;
-    var weeklyOutput = document.getElementById("weeklyOutput")
+    var weeklyOutput = document.getElementById("weeklyOutput");
 
-    weeklyOutput.innerHTML = "Kshs" + weeklyIncome;
+   
+
+    var yearlyIncome = totalProduction * buyingPrice * 365;
+    var annualOutput = document.getElementById("annualOutput");
+
+    annualOutput.innerHTML = "Your weekly income will be Kshs " +weeklyOutput +"<br>"
+                            + "Your yearly income will be Kshs " +yearlyIncome;
+}
+
+function leapYear (month, days){
+    var january = {
+        month : "January",
+        days : 31,
+        
+    };
+    var february = {
+       month : "February",
+       days : 28
+    };
+    var march ={
+       month : "March",
+       days : 31
+    };
+    var april= {
+       month : "April",
+       days : 30
+    };
+    var may = {
+       month : "May",
+       days : 31
+    };
+    var june = {
+       month : "June",
+       days : 30
+    };
+    var july = {
+       month : "July",
+       days : 31
+    }
+    var august= {
+       month : "August",
+       days : 31
+    }
+    var september = {
+       month : "September",
+       days : 30
+    }
+    var october = {
+       month : "October",
+       days : 31
+    }
+    var november = {
+       month : "November",
+       days : 30
+    }
+    var december = {
+       month : "Decembeer",
+       days : 31
+    }
+    
 }
