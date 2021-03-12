@@ -13,7 +13,7 @@ function shedProduction(){
 
         
     if (isNaN(shedA) || isNaN(shedB) || isNaN(shedC) || isNaN(shedD)){
-        alert ("Enter a numeric value")
+        alert ("CAUTION !!! Only numeric values are accepted")
         return;
     }
     else if (shedA === "" || shedB === " " || shedC === " " || shedD === " "){
