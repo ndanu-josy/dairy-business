@@ -20,7 +20,7 @@
 //console.log ("Your production in shed D is "+shedD+ " litres in a day");
 //console.log ("Your total production in a day is "+totalProduction+ " litres");
 function shedProduction(){
-    var sheds = []
+    
 
     var shedA = sheds.push(document.getElementById("amt1").value);
     var shedB = sheds.push(document.getElementById("amt2").value);
@@ -30,8 +30,7 @@ function shedProduction(){
     var totalProduction = parseInt(shedA) + parseInt(shedB) +parseInt(shedC) + parseInt(shedD);
     var dailyPro = document.getElementById("dailyPro");
 
-    for (var i=0; i<4; i++){
-        dailyPro.innerHTML = "Your daily production for shed A is " + sheds[i]}
+        dailyPro.innerHTML = "Your daily production for shed A is " + 
 
     //if (shedA === 0 || shedB === 0 || shedC === 0 || shedD === 0){
         //dailyPro.innerHTML = "please fill all the fields";
