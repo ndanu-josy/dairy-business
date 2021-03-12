@@ -23,16 +23,19 @@ function shedProduction(){
     var sheds = []
 
     var shedA = sheds.push(document.getElementById("amt1").value);
-    var shedB = sheds.push(document.getElementById("amt1").value);
-    var shedC = sheds.push(document.getElementById("amt1").value);
-    var shedD = sheds.push(document.getElementById("amt1").value);
-    
+    var shedB = sheds.push(document.getElementById("amt2").value);
+    var shedC = sheds.push(document.getElementById("amt3").value);
+    var shedD = sheds.push(document.getElementById("amt4").value);
+
     var totalProduction = parseInt(shedA) + parseInt(shedB) +parseInt(shedC) + parseInt(shedD);
     var dailyPro = document.getElementById("dailyPro");
 
-    if (shedA === 0 || shedB === 0 || shedC === 0 || shedD === 0){
+    for (var i=0; i<4; i++){
+        dailyPro.innerHTML = "Your daily production for shed A is " + sheds[i]}
+
+    //if (shedA === 0 || shedB === 0 || shedC === 0 || shedD === 0){
         //dailyPro.innerHTML = "please fill all the fields";
-    }
+    //}
     //else{
         //dailyPro.innerHTML = "Your daily production for Shed A is " + shedA;
         //dailyPro.innerHTML = "Your daily production for Shed B is " + shedB;
@@ -41,7 +44,6 @@ function shedProduction(){
 
         //dailyPro.innerHTML = totalProduction;
     //}
-    dailyPro.innerHTML = "<p> Your daily production for shed A is " +shedA && "<p> Your daily production for shed B is " +shedB && 
-    "<p> Your daily production for shed C is " +shedC && "<p> Your daily production for shed D is " +shedD
+    
    
 }
