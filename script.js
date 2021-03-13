@@ -105,7 +105,19 @@ for (var i=0; i<12; i++) {
     //var totalProduction = 500;
     var monthlyIncome = leapYear[i].days * totalProduction * 45;
 
-     leapMonth.innerHTML = "Your income for " + leapYear[i].month + " is Kshs " + monthlyIncome;
+     leapMonth.innerHTML = "Your income for " + leapYear[0].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[1].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[2].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[3].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[4].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[5].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[6].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[7].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[8].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[9].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[10].month + " is Kshs " + monthlyIncome + "<br>"
+                            +"Your income for " + leapYear[11].month + " is Kshs " + monthlyIncome ;
+   
    
 }
 
