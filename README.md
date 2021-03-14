@@ -25,7 +25,7 @@ This will clone the repository into your local folder
  Git
 
 ### Live Site
-View [live](https://ndanu-josy.github.io/Anitas-Kitchen/)
+View [live](https://ndanu-josy.github.io/dairy-business/)
 
 ### Licence
 This project is under the  [MIT](LICENSE) licence
