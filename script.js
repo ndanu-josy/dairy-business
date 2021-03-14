@@ -1,5 +1,6 @@
 
     var totalProduction;
+    var buyingPrice = 45;
 function shedProduction(){
     
 
@@ -34,7 +35,7 @@ function shedProduction(){
 }
 
 function income (sp, time) {
-    var buyingPrice = 45;
+    
     var weeklyIncome = totalProduction * buyingPrice *7;
     var weeklyOutput = document.getElementById("weeklyOutput");
 
@@ -46,7 +47,7 @@ function income (sp, time) {
     annualOutput.innerHTML = "Your weekly income will be Kshs " +weeklyIncome +"<br>"
                             + "Your yearly income will be Kshs " +yearlyIncome;
 }
-
+   
 function leapYearIncome (month, days){
     var january = {
         month : "January",
@@ -55,7 +56,7 @@ function leapYearIncome (month, days){
     };
     var february = {
        month : "February",
-       days : 28
+       days : 29
     };
     var march ={
        month : "March",
@@ -100,25 +101,14 @@ function leapYearIncome (month, days){
     var leapYear = [january, february, march, april, may, june, july, august, september, october, november, december];
     var leapMonth = document.getElementById("leapMonth");
 
-for (var i=0; i<12; i++) {
+ for (var i=0; i<leapYear.length; i++) {
 
     //var totalProduction = 500;
-    var monthlyIncome = leapYear[i].days * totalProduction * 45;
+    var monthlyIncome = leapYear[i].days * totalProduction * buyingPrice;
+         leapYear.monthlyIncome;
 
-     leapMonth.innerHTML = "Your income for " + leapYear[0].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[1].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[2].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[3].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[4].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[5].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[6].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[7].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[8].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[9].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[10].month + " is Kshs " + monthlyIncome + "<br>"
-                            +"Your income for " + leapYear[11].month + " is Kshs " + monthlyIncome ;
-   
-   
+  leapMonth.innerHTML  += "Your income for " + leapYear[i].month + " is Kshs " + monthlyIncome + "<br>";
+  //leapMonth.innerHTML += leapYear[i].days;
+ 
 }
-
 }
