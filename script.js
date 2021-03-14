@@ -23,11 +23,11 @@ function shedProduction(){
     
     }
     else{
-        dailyPro.innerHTML = "Your daily production for shed A is " + shedA + "<br>"
-                             + "Your daily production for shed B is " + shedB + "<br>"  
-                             + "Your daily production for shed C is " + shedC+ "<br>"  
-                             + "Your daily production for shed D is " + shedD + "<br>" 
-                             + "Your total milk production in a day is  " + totalProduction;
+        dailyPro.innerHTML = "Your daily production for shed A is " + shedA + " litres" + "<br>"
+                             + "Your daily production for shed B is " + shedB + " litres" +"<br>"  
+                             + "Your daily production for shed C is " + shedC+ " litres" +"<br>"  
+                             + "Your daily production for shed D is " + shedD + " litres" +"<br>" 
+                             + "Your total milk production in a day is  " + totalProduction + " litres";
 
     }
     
