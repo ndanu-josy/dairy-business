@@ -17,7 +17,7 @@
         <div class="content">
 
             <div class="form">
-               <p>How much milk does each shed produce in a day?</p> 
+               <h3>How much milk does each shed produce in a day?</h3> 
                
                <div class="input-field">
                 <label for="amt1">Shed A</label>
@@ -39,7 +39,7 @@
                 <input class="amount" type="text" id="amt4" name="amt4" placeholder="Milk in litres">
             </div>
 
-            <p>Your average milk production on a good day is:</p>
+            <h3>Your average milk production on a good day is:</h3>
             <input class="button" type="button" value="CALCULATE !!" onclick="shedProduction()">
             
             <p id="dailyPro">
@@ -52,7 +52,7 @@
             <h3>Weekly and annual projections in a normal year</h3>
             <div id="weekly"> 
                 <p>The  weekly and annual income is </p>
-                <input type="button" value="WEEKLY & ANNUAL EARNING" onclick="income()">
+                <input class= "button" type="button" value="WEEKLY & ANNUAL EARNING" onclick="income()">
                 <p id="weeklyOutput"></p>
                 <p id="annualOutput"></p>
             </div>
@@ -63,7 +63,7 @@
         <div class="leap-year">
             <h3>Leap Year Prediction</h3>
             <div class="each-month">
-                <input type="button" value="MONTHLY-FORECAST" onclick="leapYearIncome()">
+                <input class= "button" type="button" value="MONTHLY-FORECAST" onclick="leapYearIncome()">
                 <P id="leapMonth"></P>
             </div>
         </div>
@@ -72,6 +72,10 @@
 
 
     </div>
+
+    <footer>
+        <p>Now I have track of my Income Flow</p>
+    </footer>
     </body>
     <script src="script.js"></script>
 </html>
