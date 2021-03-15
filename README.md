@@ -14,7 +14,7 @@ Use the following command for installation.
 To access this project on your local files, you can clone it using these steps
 
 Open your terminal
-lone using this command `$ git clone https://github.com/ndanu-josy/Anitas-Kitchen
+lone using this command `$ git clone https://github.com/ndanu-josy/dairy-business
 This will clone the repository into your local folder
 
 
